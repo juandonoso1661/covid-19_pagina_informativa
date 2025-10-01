@@ -1,0 +1,170 @@
+/* ==== ESTILOS GENERALES ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #0f172a;
+    /* Azul muy oscuro */
+    color: #e2e8f0;
+    /* Gris claro */
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+/* ==== NAVBAR ==== */
+nav {
+    background: #1e3a8a;
+    /* Azul oscuro */
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+nav h1 {
+    color: white;
+    font-size: 1.6rem;
+}
+
+/* ==== SECCIONES DE INFORMACIÓN ==== */
+.info-uno,
+.info-dos {
+    width: 85%;
+    margin: 30px auto;
+    background: #1e293b;
+    /* Azul grisáceo oscuro */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.info-uno h2,
+.info-dos h2,
+.info-dos h3 {
+    color: #60a5fa;
+    /* Azul cian moderno */
+    margin-bottom: 10px;
+}
+
+/* ==== CONTENEDOR GENERAL ==== */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* ==== TARJETAS ==== */
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+}
+
+.card-title {
+    font-size: 1.3rem;
+    color: #60a5fa;
+    margin-bottom: 10px;
+}
+
+.card-text,
+.card p {
+    color: #e2e8f0;
+    font-size: 0.95rem;
+}
+
+/* ==== LISTAS ==== */
+ol,
+ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+ol li,
+ul li {
+    margin-bottom: 5px;
+}
+
+/* ==== SECCIONES ADICIONALES ==== */
+.modo-contagio,
+.tratamiento {
+    width: 100%;
+    background: #1e293b;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.modo-contagio h2,
+.tratamiento h2 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+/* ==== FOTOS ==== */
+.fotos img {
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* ==== TEORÍAS ==== */
+.teoria-1,
+.teoria-2 {
+    margin-top: 20px;
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.teoria-1 h2,
+.teoria-2 h2 {
+    color: #60a5fa;
+    margin-bottom: 10px;
+}
+
+.teoria-1 p,
+.teoria-2 p {
+    font-size: 0.95rem;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+    nav h1 {
+        font-size: 1.2rem;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        align-items: center;
+    }
+
+    .info-uno,
+    .info-dos {
+        width: 90%;
+    }
+}
